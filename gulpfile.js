@@ -50,3 +50,4 @@ function watchTask() {
 
 // Default task
 exports.default = series(parallel(scssTask, jsTask), watchTask);
+exports.build = series(parallel(scssTask), cacheBustTask);
