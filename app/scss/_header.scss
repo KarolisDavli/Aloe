@@ -1,0 +1,44 @@
+// Header
+.header {
+    background: linear-gradient(rgba(16, 15, 20, 0.4), rgba(16, 15, 20, 0.4)),
+        url("images/bg-image.png") center no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+
+    li {
+        list-style-type: none;
+        padding: 0 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+// Header text
+.header-text {
+    margin-top: 8rem;
+}
+
+.heading-p {
+    font-size: 1.125rem;
+    padding: 1rem 0 3rem;
+}
+
+// Tablet view
+@media (max-width: 900px) {
+    .header-text {
+        margin-top: 5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .heading-p {
+        font-size: 1rem;
+    }
+}

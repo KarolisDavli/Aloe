@@ -1,0 +1,54 @@
+// UI elements
+.btn {
+    color: $purple;
+    font-weight: 500;
+    padding: .7rem 1.5rem;
+    border: 3px $purple solid;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: $purple;
+}
+
+.btn-secondary {
+    color: $purple;
+    font-family: $font-stack;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    i {
+        padding-left: 1rem;
+        transition: all .3s ease;
+    }
+}
+
+.btn-secondary:hover {
+    i {
+        padding-left: 1.6rem;
+        transition: all .3s ease-out;
+
+    }
+}
+
+// Container
+.wrapper {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 5%;
+}
+
+// Section
+section {
+    margin-bottom: 6rem;
+}

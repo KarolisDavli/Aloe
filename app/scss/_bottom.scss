@@ -1,0 +1,64 @@
+.bottom {
+    background: url("images/bottom-image.png") center no-repeat;
+    height: 675px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.bottom h2 {
+    padding: 7rem 0 1.5rem;
+}
+
+.bottom .btn-secondary {
+    display: inline;
+}
+
+
+
+// Subscribe
+.subscribe-form {
+    margin: 4rem auto;
+    max-width: 300px;
+}
+
+input {
+    color: $purple;
+}
+
+input[type=text] {
+    text-align: left;
+    padding: 10px 2rem;
+    border: 0;
+    caret-color: $purple;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.5rem;
+    opacity: .7;
+    font-size: 1rem;
+}
+
+
+// Footer
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+    align-items: center;
+
+    a {
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+// Hide copyright 
+@media (max-width: 767px) {
+    .footer-nav {
+        display: block;
+    }
+
+    .footer-nav p {
+        display: none;
+    }
+}

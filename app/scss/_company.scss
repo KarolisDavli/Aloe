@@ -1,0 +1,31 @@
+.company-grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 8rem 0;
+}
+
+.company-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.company-text {
+    max-width: 390px;
+
+    p {
+        padding: 1.5rem 0 2.5rem;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .company-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company * img {
+        display: none;
+    }
+}

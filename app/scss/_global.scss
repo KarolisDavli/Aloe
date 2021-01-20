@@ -1,0 +1,82 @@
+// Font
+@import url("https://use.typekit.net/ode2erj.css");
+
+// Reset
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eee;
+}
+
+
+// Colors
+$purple: #c6698b;
+$black: #272932;
+$green: #4c8577;
+$blue: #4d7ea8;
+
+// Fonts
+$font-stack: azo-sans-web,
+sans-serif;
+
+h1 {
+    font-family: $font-stack;
+    font-weight: 900;
+    font-size: 4.4rem;
+    color: #fff;
+}
+
+h2 {
+    font-family: $font-stack;
+    font-size: 3rem;
+    font-weight: 500;
+    color: $purple;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+h3 {
+    color: $black;
+    font-family: $font-stack;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+p {
+    font-family: $font-stack;
+    opacity: .7;
+}
+
+a {
+    font-family: $font-stack;
+}
+
+.light {
+    color: #fff;
+}
+
+.dark {
+    color: $black;
+}
+
+.highlight {
+    color: $purple;
+}
+
+// Responsive fonts 
+@media (max-width: 900px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+}

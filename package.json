@@ -1,0 +1,38 @@
+{
+  "name": "gulpstart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unotreal/starting.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unotreal/starting/issues"
+  },
+  "homepage": "https://github.com/unotreal/starting#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "gulp-uglify-es": "^2.0.0",
+    "https": "^1.0.0",
+    "request": "^2.88.2"
+  }
+}

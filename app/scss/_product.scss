@@ -1,0 +1,40 @@
+// Products
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding-bottom: 5rem;
+}
+
+.product-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.product-grid h3 {
+    color: $black;
+    padding-top: 1rem;
+}
+
+.product-item {
+    opacity: 1;
+}
+
+.product-item:hover {
+    opacity: 0.8;
+}
+
+// Tablet view
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+    }
+}
+
+// Mobile vie
+@media (max-width: 650px) {
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
