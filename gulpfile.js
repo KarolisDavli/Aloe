@@ -34,12 +34,12 @@ function jsTask() {
 }
 
 // Cachebust
-function cacheBustTask() {
-  var cbString = new Date().getTime();
-  return src(["index.html"])
-    .pipe(replace(/cb=\d+/g, "cb=" + cbString))
-    .pipe(dest("."));
-}
+// function cacheBustTask() {
+//   var cbString = new Date().getTime();
+//   return src(["index.html"])
+//     .pipe(replace(/cb=\d+/g, "cb=" + cbString))
+//     .pipe(dest("."));
+// }
 
 
 // Watch task
@@ -49,4 +49,4 @@ function watchTask() {
 
 // Default task
 exports.default = series(parallel(scssTask, jsTask), watchTask);
-exports.build = series(parallel(scssTask), cacheBustTask);
+exports.build = series(parallel(scssTask));
