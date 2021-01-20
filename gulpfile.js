@@ -33,15 +33,14 @@ function jsTask() {
     .pipe(dest("dist"));
 }
 
-// Cachebusting task
-// const cbString = new Date().getTime();
+// Cachebust
+function cacheBustTask() {
+  var cbString = new Date().getTime();
+  return src(["index.html"])
+    .pipe(replace(/cb=\d+/g, "cb=" + cbString))
+    .pipe(dest("."));
+}
 
-// function cacheBustTask() {
-//     return src(['index.html'])
-//         .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
-//         .pipe(dest('.')
-//     );
-// }
 
 // Watch task
 function watchTask() {
